@@ -1,14 +1,11 @@
 body{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   font-family: Helvetica;
 }
 
 .title {
-  font-size: 46pt;
+  font-size: 36pt;
 }
 
-.navbox {
-  border: 4px dashed green;
-}

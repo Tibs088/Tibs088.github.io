@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .cloumn {
+  padding: 8px;
+}
+
+.cloumn {
+  float: left;
+  width: 10%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px){
+  .cloumn{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
