@@ -9,3 +9,54 @@ body{
   font-size: 36pt;
 }
 
+.imageSplash{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../images/4k-desktop-wallpaper.-2560×1080.jpg);
+  background-size: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-attachment: fixed;
+}
+.imageSplash h1 {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 10vw;
+  text-shadow: 0 2px 10px #000;
+}
+.clickScroll {
+  z-index: 3;
+  opacity: 0;
+  height: 0px;
+  position: absolute;
+}
+label {
+  color: #FFF;
+  font-size: 3em;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+input[type=checkbox]:checked ~ .imageSplash {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.wrapper {
+    height: 100%;
+    overflow: scroll;
+}
