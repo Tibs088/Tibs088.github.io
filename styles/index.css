@@ -1,3 +1,8 @@
+@font-face {
+    font-family: david-libre;
+    src: url('../fonts/DavidLibre-regular.ttf')
+}
+
 html,
 body {
     height: 100%;
@@ -74,6 +79,7 @@ input[type=checkbox]:checked ~ .imageSplash {
     border: 5px gray;
     margin: 5px;
     background-color: lightgray;
+    font-family: david-libre;
 }
 
 .skillz-holder {
