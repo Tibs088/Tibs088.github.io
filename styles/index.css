@@ -4,6 +4,12 @@ body {
     overflow: hidden;
 }
 
+h3 { 
+    text-align: center;
+    width: 100px;
+    padding: 15px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -58,4 +64,13 @@ input[type=checkbox]:checked ~ .imageSplash {
 .wrapper {
     height: 100%;
     overflow: scroll;
+}
+
+.personal-profile {
+    float: right;
+    width: 500px;
+    padding: 15px 30px 15px 15px;
+    border: 5px gray;
+    margin: 5px;
+    background-color: gray;
 }
