@@ -6,9 +6,9 @@ body {
 
 h3 { 
     text-align: center;
-    width: 100px;
     padding: 15px;
 }
+
 
 * {
   box-sizing: border-box;
@@ -67,10 +67,21 @@ input[type=checkbox]:checked ~ .imageSplash {
 }
 
 .personal-profile {
+    border-radius: 5%;
     float: right;
     width: 500px;
     padding: 15px 30px 15px 15px;
     border: 5px gray;
     margin: 5px;
-    background-color: gray;
+    background-color: lightgray;
+}
+
+.skillz-holder {
+    width: 90%;
+
+}
+
+.skillz {
+    max-width: 25%;
+    max-height: 25%;
 }
