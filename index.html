@@ -12,6 +12,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
+    .tech-skills {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      padding: 0em 0 2em 0;
+    }
+
+    .tech-skills img {
+      width: 100%;
+    }
+
+
     #skills {
       max-width: 50px;
       max-height: 50px;
@@ -106,75 +118,97 @@
   <div class="container">
     <div class='row'>
       <div class="col-sm-12">
-        <h3 style='text-align: center; padding: 2em 0;'>Tech Skills and Experince</h3>
+        <h3 style='text-align: center; padding: 2em 0;'>Tech Skills and Experience</h3>
       </div>
     </div>
     <div class='row'>
       <div class='col-sm-6'>
-        <div id='northCodersTech'>
-          <img id="skills" src='./images/software&packages/jslogo.png' alt='JavaScript' />
-          <img id="skills" src='./images/software&packages/nodejs.webp' alt='node.js' />
-          <img id="skills" src="./images/software&packages/htmllogo.png" alt="HTML" />
-          <img id="skills" src='./images/software&packages/csslogo.png' alt='CSS' />
-          <img id="skills" src='./images/software&packages/reactlogo.png' alt='React' />
-          <img id="skills" src='./images/software&packages/psql.png' alt='Postgres SQL' />
-          <p>I have completed a software development bootcamp at Northcoders over the past few months, a 14 week
-            intensive
-            course
-            taught using Javascript split into a fundementals, backend, frontend and finally fullstack project phase to
-            make
-            me
-            confident and work read. On this course I developed a keen inerest in React and Frontend development.</p>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id='northCodersTech' class="tech-skills">
+              <img id="skills" src='./images/software&packages/jslogo.png' alt='JavaScript' />
+              <img id="skills" src='./images/software&packages/nodejs.webp' alt='node.js' />
+              <img id="skills" src="./images/software&packages/htmllogo.png" alt="HTML" />
+              <img id="skills" src='./images/software&packages/csslogo.png' alt='CSS' />
+              <img id="skills" src='./images/software&packages/reactlogo.png' alt='React' />
+              <img id="skills" src='./images/software&packages/psql.png' alt='Postgres SQL' />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>I have completed a software development bootcamp at Northcoders over the past few months, a 14 week
+              intensive course taught using Javascript split into a fundementals, backend, frontend and finally
+              fullstack project phase to make me confident and work read. On this course I developed a keen inerest in
+              React and Frontend development.</p>
+          </div>
         </div>
       </div>
       <div class='col-sm-6'>
-        <div id='videoGamesTech'>
-          <img id="skills" src='./images/software&packages/UnrealLogo.png' alt='Unreal Engine 4' />
-          <img id="skills" src='./images/software&packages/UnityLogo.jpg' alt='Unity Engine' />
-          <img id="skills" src='./images/software&packages/phaser.png' alt='Phaser 3' />
-          <p>Attended University to study Computer Games
-            Design and Development, giving me strong understanding of the
-            theoretical
-            side of Games Design and the skills to design and develop video games within a number of different
-            frameworks
-            and
-            engines. While on this course I took part in game jams and completed several large scale assignments and
-            projects.</p>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id='videoGamesTech' class="tech-skills">
+              <!--added a class tech-skills -->
+              <img id="skills" src='./images/software&packages/UnrealLogo.png' alt='Unreal Engine 4' />
+              <img id="skills" src='./images/software&packages/UnityLogo.jpg' alt='Unity Engine' />
+              <img id="skills" src='./images/software&packages/phaser.png' alt='Phaser 3' />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- put description in a separate rows otherwise tech-skills class messes up the paragraph -->
+          <div class="col-sm-12">
+            <p>Attended University to study Computer Games Design and Development, giving me strong understanding of the
+              theoretical side of Games Design and the skills to design and develop video games within a number of
+              different frameworks and engines. While on this course I took part in game jams and completed several
+              large scale assignments and projects.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+
+
+  <div class="container" style="padding-bottom:2em">
     <div class='row'>
       <div class="col-sm-12">
-        <h3>Projects</h3>
+        <h3 style='text-align: center; padding: 2em 0 1em 0;'>Projects</h3>
       </div>
     </div>
     <div class='row'>
-      <div class='col-sm-6' style='background-color: grey;'>
-        <h4>Current Project</h4>
-        <img src='./images/helpergameShot1.png' alt='Early Helper Game Screenshot' style='max-width: 300px;' />
+      <div class="col-sm-6 bg-light">
+        <!-- bg-light is a class from the bootstrap css -->
+        <h4 style='text-align: center; padding: 1em 0;'>Current Project</h4>
+
+        <div style="text-align:center">
+          <img src='./images/helpergameShot1.png' alt='Early Helper Game Screenshot'
+            style='max-width: 300px;padding-bottom:1em;' />
+        </div>
+
         <p>Currently, I am working on a Phaser game within a React app as part of my final project for Northcoders. The
-          game
-          is about going out into the world post lockdown and helping people. It's a game about positivity, something
-          that
-          is really needed right now. Find the link to the gitHub here. Should be hosted by 13th of November.</p>
+          game is about going out into the world post lockdown and helping people. It's a game about positivity,
+          something that is really needed right now. Find the link to the gitHub here. Should be hosted by 13th of
+          November.</p>
         <p>This was built as a group project with 3 others. While I had been pair programming for awhile this was my
-          first
-          experince of developing a fullstack project over a 3 week period. We broke our projects down into tasks and
-          had
-          sprints to build these features and mechanics out in pairs or solo.</p>
-        <a href="https://github.com/CharlyMannion/final_project">Github Repo</a>
+          first experience of developing a fullstack project over a 3 week period. We broke our projects down into tasks
+          and had sprints to build these features and mechanics out in pairs or solo.</p>
+        <div style="text-align:center;padding-bottom:1em;">
+          <button type="button" class="btn btn-warning"><a href="https://github.com/CharlyMannion/final_project">Github
+              Repo</a></button> <!-- button from bootstrap css -->
+        </div>
       </div>
       <div class='col-sm-6'>
         <div>
-
+          <!-- going to add projects later -->
         </div>
       </div>
     </div>
+  </div> <!-- close the container-->
+  <!-- add the footer after the closing container -->
+  <div class="footer jumbotron text-center" style="margin-bottom:0">
+    <p><a href="github.com/Tibs088"><i class="fab fa-github"></i></a><a href="mailto:tibs088@gmail.com"><i
+          class="far fa-envelope"></i></a><a href="tel:07568367852 "><i class="fas fa-mobile-alt"></i></a></p>
   </div>
-
-
 
 </body>
 
