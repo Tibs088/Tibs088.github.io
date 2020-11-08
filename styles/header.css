@@ -1,0 +1,11 @@
+#header{
+  width: 100vw;
+  background-color: #ffc20e;
+  padding: 1px;
+  margin: 0px;
+  max-width: 1250px;
+}
+#headerContent{
+  margin: 0 auto;
+  width: 1080px;
+}

@@ -4,72 +4,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Matthew</title>
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/navbar.css">
+  <title>Matthew Hartley</title>
+  <link rel='stylesheet' href='./styles/header.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a76272d039.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    #skills {
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    #myPicture {
+      max-width: 200px;
+    }
+
+    .bg-dark,
+    .nav-link.active {
+      background-color: #ffc20e !important;
+    }
+
+    i {
+      width: 50px;
+      font-size: 30px;
+      color: #212529;
+    }
+
+    i:hover {
+      color: #ffc20e;
+    }
+
+    ul.about-me {
+      list-style-type: none;
+      margin-left: 0;
+      margin-top: 1rem;
+      padding-left: 0;
+    }
+
+    ul.about-me i {
+      margin-top: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .jumbotron {
+        padding: 2rem 2rem 1rem 2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-  <input id="clickScroll" type="checkbox" class="clickScroll"></input>
-  <div class="imageSplash" id="imageSplash">
-    <script src="scripts/splashfunc.js"></script>
-    <h1>Matthew Hartley</h1>
-    <label for="clickScroll">
-      <span class="fa-stack">
-        <i class="fa fa-circle-thin fa-stack-2x"></i>
-        <i class="fa fa-bars fa-stack-1x"></i>
-      </span>
-    </label>
+  <div class='jumbotron text-center' style='margin-bottom: 0; background-color: #ffc20e; max-height: 8%;'>
+    <div id='headerContent'>
+      <h1>Matthew Hartley</h1>
+      <h4>Junior Software Developer/Aspiring Developer and Games Designer</h4>
+    </div>
   </div>
-
-  <div class="wrapper">
-    <div class="hartley">
-      <div class="container">
-        <h1 class="title">Matthew Hartley</h1>
-        <nav class="icon-bar">
-          <a class="active" href="#">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/projects.html">Projects</a>
-          <a href="/games.html">Games</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-        <h3>Matthew Hartley - Junior Software Developer</h3>
-        <div width=100%>
-          <div class="personal-profile" width=50%>
-            <br>
-            <p>Hello and welcome! I am Matthew Hartley, a software developer with a strong interest in frontend
-              development. I have
-              recently concluded the Northcoders Course remotely near Leeds and am actively searching for a new career
-              in
-              software
-              development, primarily in the North but with a desire to explore my options.</p>
-            <p>
-              I completed a degree with honours in Computer Games Design which triggered this interest in software
-              development. I have
-              created a number of game design projects in several engines. I have spent almost 10 years working in care
-              work
-              which has
-              made me empathetic in the work place and conscious of my colleagues and customers I interact with.</p>
-          </div>
-          <div class=".pic-container" width=50%>
-            <img src="./images/avatars-000604612689-000be8-t500x500.jpg" alt="Profile Picture" class="profile-pic">
-          </div>
-        </div>
-        <div class="skillz-holder" width=100%>
-          <img src="./images/software&packages/htmllogo.png" alt="HTML5" class="skillz">
-          <img src="./images/software&packages/csslogo.png" alt="CSS" class="skillz">
-          <img src="./images/software&packages/jslogo.png" alt="Javascript" class="skillz">
-          <img src="./images/software&packages/nodejs.webp" alt="Node.js" class="skillz">
-          <img src="./images/software&packages/reactlogo.png" alt="React" class="skillz">
-          <img src="./images/software&packages/UnrealLogo.png" alt="Unreal Engine" class="skillz">
-          <img src="./images/software&packages/UnityLogo.jpg" alt="Unity Engine" class="skillz">
-          <img src="./images/software&packages/psql.png" alt="Postgres SQL" class="skillz">
-          <img src="./images/software&packages/photoshop.png" alt="photoshop" class="skillz">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12' style='text-align: center; padding: 1em 0;'>
+        <img id='myPicture' src="./images/Matthew-02.jpg" />
+      </div>
+    </div>
+  </div>
+  <div class='container'>
+    <div class="row">
+      <div class='col-sm-12'>
+        <div id='personalProfile'>
+          <p>I like to think of myself as someone who can find the fun in what I do. Coming from care work, turning the
+            average day
+            into something to enjoy was always important to help those I was working with up their motivation. Care work
+            also
+            gave
+            me solid experience in communicating with others, since a lot of the people I was working with were
+            non-verbal or
+            had
+            limited communication, I had to learn to adjust my communication both spoken and not, to become a good
+            carer. This
+            was
+            particularly helpful for me having grown up diagnosed with Autism.</p>
+          <br>
+          <p> In tech I have been inspired by video games, originally going to university to study games design but
+            shifting
+            in
+            the
+            direction of software, since I found the fun in simply making computers do things. However, that games
+            design
+            experience
+            isn’t wasted. Since a lot of games design is focused around making the players' experience as exciting as
+            possible, I’m
+            constantly conscious of the user experience. In games that would be ensuring that game mechanics were
+            accessible
+            and
+            controls were intuitive, which lines up with software in making apps user friendly and readable.</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class='row'>
+      <div class="col-sm-12">
+        <h3 style='text-align: center; padding: 2em 0;'>Tech Skills and Experince</h3>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-sm-6'>
+        <div id='northCodersTech'>
+          <img id="skills" src='./images/software&packages/jslogo.png' alt='JavaScript' />
+          <img id="skills" src='./images/software&packages/nodejs.webp' alt='node.js' />
+          <img id="skills" src="./images/software&packages/htmllogo.png" alt="HTML" />
+          <img id="skills" src='./images/software&packages/csslogo.png' alt='CSS' />
+          <img id="skills" src='./images/software&packages/reactlogo.png' alt='React' />
+          <img id="skills" src='./images/software&packages/psql.png' alt='Postgres SQL' />
+          <p>I have completed a software development bootcamp at Northcoders over the past few months, a 14 week
+            intensive
+            course
+            taught using Javascript split into a fundementals, backend, frontend and finally fullstack project phase to
+            make
+            me
+            confident and work read. On this course I developed a keen inerest in React and Frontend development.</p>
+        </div>
+      </div>
+      <div class='col-sm-6'>
+        <div id='videoGamesTech'>
+          <img id="skills" src='./images/software&packages/UnrealLogo.png' alt='Unreal Engine 4' />
+          <img id="skills" src='./images/software&packages/UnityLogo.jpg' alt='Unity Engine' />
+          <img id="skills" src='./images/software&packages/phaser.png' alt='Phaser 3' />
+          <p>Attended University to study Computer Games
+            Design and Development, giving me strong understanding of the
+            theoretical
+            side of Games Design and the skills to design and develop video games within a number of different
+            frameworks
+            and
+            engines. While on this course I took part in game jams and completed several large scale assignments and
+            projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='projects'>
+    <h3>Projects</h3>
+    <h4>Current Project</h4>
+    <img src='./images/helpergameShot1.png' alt='Early Helper Game Screenshot' />
+    <p>Currently, I am working on a Phaser game within a React app as part of my final project for Northcoders. The game
+      is about going out into the world post lockdown and helping people. It's a game about positivity, something that
+      is really needed right now. Find the link to the gitHub here. Should be hosted by 13th of November.</p>
+    <p>This was built as a group project with 3 others. While I had been pair programming for awhile this was my first
+      experince of developing a fullstack project over a 3 week period. We broke our projects down into tasks and had
+      sprints to build these features and mechanics out in pairs or solo.</p>
+    <a href="https://github.com/CharlyMannion/final_project">Github Repo</a>
+  </div>
+
 </body>
 
 </html>
